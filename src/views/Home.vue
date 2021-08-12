@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <!--<img alt="Vue logo" src="../assets/logo.png">-->
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <Nintendo />
     <div class="lg:flex block">
      <div class="flex-1">
@@ -38,7 +36,6 @@
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
 import Nintendo from  '@/components/Nintendo.vue'
 import Actuality from '@/components/Actuality.vue'
 import axios from 'axios'
@@ -75,9 +72,6 @@ export default {
       }
       this.actualPerson = person
     },
-    activePerson () {
-         document.getElementById(this.actualPerson.id).style.borderBottom = "solid 2px orange"
-    }
   },
   components: {
    // HelloWorld,
