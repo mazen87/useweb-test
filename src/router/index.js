@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Games from '../components/Games.vue'
 import Consoles from '../components/Consoles.vue'
 import News from '../components/News.vue'
+import ActualityDetails from '../components/ActualityDetails.vue'
 
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/new/:id',
+    name: 'ActualityDetails',
+    component: ActualityDetails
   },
   {
     path: '/about',
