@@ -23,8 +23,8 @@ export default {
 
       const myActuality = await axios.get('http://localhost:3000/news/'+this.id)
       this.actuality    = myActuality.data
-    }catch (e){
-      console.error(e)
+    }catch (error){
+      console.error(error)
     }   
     }
 }
